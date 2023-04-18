@@ -20,6 +20,11 @@ export default defineCommand({
       dev: true,
       preset: "nitro-dev",
     });
+    // const fastup = await createNitro({
+    //   rootDir,
+    //   dev: true,
+    //   preset: "fastup-dev",
+    // })
     const server = createDevServer(nitro);
     await server.listen({});
     await prepare(nitro);
